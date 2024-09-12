@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "open": "Cypress open"
-
   },
   "keywords": [
     "cypress",
@@ -17,8 +16,6 @@
   "license": "ISC",
   "devDependencies": {
     "cypress": "^9.5.1"
+  
   }
-
-
- 
 }
