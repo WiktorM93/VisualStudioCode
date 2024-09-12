@@ -27,6 +27,12 @@ Cypress.Commands.add("openTshirtsTab", () => {
 Cypress.Commands.add("searchPhrase", (text, delayValue) => {
     cy.get("#search_query_top").type(text, {delay: delayValue})
 })
+
+Cypress.Commands.add("login", (email, password) => {
+    cy.get('[placeholder="Email"]').type(email);
+    cy.get('[placeholder="Password"]').type(password);
+    cy.get('[type="Submit"]').click();
+})
 //
 // -- This is a dual command --
 // Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
