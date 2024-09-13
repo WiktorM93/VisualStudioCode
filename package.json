@@ -4,7 +4,8 @@
   "description": "Testy automatyczne Cypress",
   "main": "index.js",
   "scripts": {
-    "open": "Cypress open"
+    "open": "npx cypress open",
+    "all": "npx cypress run"
   },
   "keywords": [
     "cypress",
@@ -15,7 +16,7 @@
   "author": "Wiktor Maślanka",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^9.5.1"
-  
+    "cypress": "^9.5.1",
+    "cypress-dark": "^1.8.3"
   }
 }
